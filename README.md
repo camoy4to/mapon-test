@@ -4,12 +4,12 @@
 
 This project demonstrates a Playwright-based UI automation framework implemented with Python, Pytest, and Allure Reporting.
 
-The framework was created as part of the Lead QA Automation Engineer assessment and focuses on maintainability, scalability, and clear separation of responsibilities.
+The framework was created as part of the Lead QA Automation Engineer assessment and focuses on maintainability, scalability, clear separation of responsibilities, and support for long-term test suite growth.
 
 ## Framework Structure
 
 ```text
-automation/
+autmation/
 ├── tests/
 │   ├── test_auth.py
 │   ├── test_dashboard.py
@@ -36,12 +36,25 @@ automation/
 
 ## Design Principles
 
-* Page Object Model for UI abstraction
+* Page Object Model for UI abstraction and maintainability
 * Pytest fixtures for browser and session management
-* Centralized test data
+* Centralized test data separated from test logic
 * Environment configuration through configuration files
-* Allure reporting
-* Separation of smoke and defect test suites
+* Reusable page actions and assertions
+* Clear separation between Smoke and Defect test suites
+* Scalable structure allowing easy contribution from multiple team members
+* Allure reporting for execution visibility and result analysis
+
+### Test Data Management
+
+Test data is stored separately from tests and page objects.
+
+Examples:
+
+User credentials: fixtures/users.py
+Vehicle data: fixtures/vehicles.py
+
+This approach avoids hardcoded values inside test logic and simplifies future maintenance.
 
 ## Test Suites
 
