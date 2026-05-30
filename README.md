@@ -8,7 +8,8 @@ The framework was created as part of the Lead QA Automation Engineer assessment 
 
 ## Framework Structure
 
-autmation/
+```text
+automation/
 ├── tests/
 │   ├── test_auth.py
 │   ├── test_dashboard.py
@@ -16,23 +17,22 @@ autmation/
 │   ├── test_report_generation.py
 │   ├── test_report_defects.py
 │   └── test_vehicle_defects.py
-│
 ├── pages/
 │   ├── login_page.py
 │   ├── dashboard_page.py
 │   ├── vehicle_page.py
 │   └── report_page.py
-│
 ├── fixtures/
 │   ├── users.py
 │   └── vehicles.py
-│
 ├── utils/
+│   └── config.py
 ├── conftest.py
 ├── pytest.ini
 ├── requirements.txt
 ├── README.md
 └── DEFECTS.md
+```
 
 ## Design Principles
 
