@@ -28,12 +28,11 @@ autmation/
 │   └── vehicles.py
 │
 ├── utils/
-├── allure-results/
-├── allure-report/
 ├── conftest.py
 ├── pytest.ini
-└── requirements.txt
-
+├── requirements.txt
+├── README.md
+└── DEFECTS.md
 
 ## Design Principles
 
